@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Fintax Visor</title>
+  <meta name="description" content="Contact Fintax Visor to discuss company formation, tax, bookkeeping, payroll, banking, trademark, or IRS support.">
+  <link rel="canonical" href="https://www.example.com/contact.html">
+  <meta property="og:title" content="Contact | Fintax Visor">
+  <meta property="og:description" content="Tell us what you need help with and we will help you determine the next steps.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/contact.html">
+  <meta property="og:image" content="logo.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html"><img class="brand__logo" src="logo.png" alt="Fintax Visor logo"></a>
+      <nav class="nav" aria-label="Primary navigation"><ul class="nav__links"><li><a class="nav__link" href="index.html">Home</a></li><li><a class="nav__link" href="about.html">About</a></li><li><a class="nav__link" href="services.html">Services</a></li><li><a class="nav__link" href="packages.html">Packages</a></li><li><a class="nav__link" href="blog.html">Blog</a></li><li><a class="nav__link" href="faqs.html">FAQs</a></li><li><a class="nav__link nav__link--active" href="contact.html">Contact</a></li></ul></nav>
+      <div class="nav__actions"><a class="btn btn--primary" href="book-consultation.html">Book a Consultation</a><button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" data-nav-toggle><span></span><span></span><span></span></button></div>
+    </div>
+    <div class="mobile-nav"><div class="container mobile-nav__inner"><ul class="mobile-nav__links"><li><a data-mobile-link href="index.html">Home</a></li><li><a data-mobile-link href="about.html">About</a></li><li><a data-mobile-link href="services.html">Services</a></li><li><a data-mobile-link href="packages.html">Packages</a></li><li><a data-mobile-link href="blog.html">Blog</a></li><li><a data-mobile-link href="faqs.html">FAQs</a></li><li><a data-mobile-link href="contact.html">Contact</a></li></ul><a class="mobile-nav__cta" data-mobile-link href="book-consultation.html">Book a Consultation</a></div></div>
+  </header>
+  <main>
+    <div class="container breadcrumb"><a href="index.html">Home</a> <span>/</span> Contact</div>
+    <section class="page-section hero--compact reveal">
+      <div class="container split">
+        <div>
+          <div class="section-eyebrow">Contact</div>
+          <h1 class="page-hero__title">Let's Talk About Your Business</h1>
+          <p class="page-hero__text">Tell us what you need help with and our team will help you determine the next steps.</p>
+          <div class="page-hero__actions"><a class="btn btn--primary" href="book-consultation.html">Book a Consultation</a><a class="btn btn--ghost" href="services.html">Explore Services</a></div>
+        </div>
+        <div class="split__media"><img src="us-flag.jpg" alt="US flag used as a subtle contact page visual" loading="lazy"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt reveal">
+      <div class="container split">
+        <div class="callout">
+          <h2 class="section-title" style="margin-top:0;">Contact details</h2>
+          <div class="footer__contact" style="color: var(--text);">
+            <span><strong>Email:</strong> [Email Address]</span>
+            <span><strong>Phone:</strong> [Phone Number]</span>
+            <span><strong>WhatsApp:</strong> [WhatsApp Number]</span>
+            <span><strong>Address:</strong> [Business Address]</span>
+            <span><strong>Business Hours:</strong> [Business Hours]</span>
+          </div>
+          <div class="page-hero__actions" style="margin-top:22px;"><a class="btn btn--dark" href="#">Social Links</a><a class="btn btn--ghost" href="faqs.html">View FAQs</a></div>
+        </div>
+        <form class="card" data-validate-form>
+          <div class="section-eyebrow">Send a request</div>
+          <h2 class="card__title" style="margin-top:16px;">Client inquiry form</h2>
+          <div class="form-grid" style="margin-top:18px;">
+            <div class="field"><label for="full-name">Full Name</label><input id="full-name" name="full-name" type="text" required></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+            <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required></div>
+            <div class="field"><label for="country">Country</label><input id="country" name="country" type="text" required></div>
+            <div class="field field--full"><label for="business-name">Business Name</label><input id="business-name" name="business-name" type="text" required></div>
+            <div class="field field--full"><label for="service-needed">Service Needed</label><select id="service-needed" name="service-needed" required><option value="">Select a service</option><option>Company Formation</option><option>Tax &amp; Legal Services</option><option>EIN / ITIN</option><option>Business Bank Account</option><option>Trademark Registration</option><option>Bookkeeping</option><option>Payroll</option><option>IRS Notice Resolution</option><option>Tax Refunds</option><option>Other</option></select></div>
+            <div class="field field--full"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+          </div>
+          <button class="btn btn--primary" style="margin-top:18px;" type="submit">Submit Request</button>
+          <p class="form-note">This is a static frontend form. Connect a backend or CRM to receive submissions.</p>
+          <div class="form-status" data-form-status></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__brand"><a href="index.html"><img src="logo.png" alt="Fintax Visor logo"></a><p class="footer__text">Fintax Visor helps entrepreneurs and growing businesses bring company formation, tax, accounting, payroll, banking, and compliance support together in one place.</p></div>
+      <div><h3 class="footer__title">Company</h3><ul class="footer__links"><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="packages.html">Packages</a></li><li><a href="blog.html">Blog</a></li><li><a href="faqs.html">FAQs</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h3 class="footer__title">Services</h3><ul class="footer__links"><li><a href="company-formation.html">Company Formation</a></li><li><a href="tax-legal-services.html">Tax Services</a></li><li><a href="ein-itin.html">EIN &amp; ITIN</a></li><li><a href="business-bank-account.html">Banking</a></li><li><a href="trademark-registration.html">Trademark</a></li><li><a href="bookkeeping.html">Bookkeeping</a></li><li><a href="payroll.html">Payroll</a></li><li><a href="irs-notice-resolution.html">IRS Resolution</a></li><li><a href="tax-refunds.html">Tax Refunds</a></li></ul></div>
+      <div><h3 class="footer__title">Contact</h3><div class="footer__contact"><span>[Email Address]</span><span>[Phone Number]</span><span>[Business Address]</span><span>[Business Hours]</span></div><h3 class="footer__title" style="margin-top:22px;">Legal</h3><ul class="footer__links"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Service</a></li><li><a href="#">Disclaimer</a></li></ul></div>
+    </div>
+    <div class="container footer__bottom"><span>Content is for general informational purposes and should not be considered legal, tax, or financial advice for a specific situation.</span><span>© <span data-current-year></span> [Company Name]. All rights reserved.</span></div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

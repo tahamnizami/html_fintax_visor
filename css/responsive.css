@@ -1,0 +1,27 @@
+/* Additional responsive refinements */
+@media (max-width: 768px) {
+  .page-section {
+    padding: 60px 0;
+  }
+
+  .article__hero-image {
+    margin: 24px 0;
+  }
+
+  .service-nav {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .section-title,
+  .page-hero__title {
+    letter-spacing: -0.035em;
+  }
+
+  .section-eyebrow,
+  .hero__eyebrow,
+  .badge {
+    font-size: 0.75rem;
+  }
+}
