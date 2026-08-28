@@ -253,7 +253,8 @@ The main pages are:
 │   ├── bookkeeping
 │   ├── payroll
 │   ├── irs-notice-resolution
-│   └── tax-refunds
+│   ├── tax-refunds
+│   └── legal-reports-certificates
 ├── packages
 ├── blog
 ├── faqs
@@ -278,6 +279,7 @@ bookkeeping.html
 payroll.html
 irs-notice-resolution.html
 tax-refunds.html
+legal-reports-certificates.html
 packages.html
 blog.html
 faqs.html
@@ -438,6 +440,7 @@ Services:
 7. Payroll Processing
 8. IRS Notice Resolution
 9. Tax Refunds
+10. Legal Reports and Certificates
 
 Each card should have:
 
@@ -644,6 +647,14 @@ Use the actual content from:
 
 Do not replace the service content with generic filler.
 
+For **Legal Reports and Certificates**, include:
+
+- H1: **Legal Reports and Certificates for Your Business**
+- Problem / Context card explaining requests for reports, certificates, and official records.
+- Services may include card listing business status reports, certificates of good standing where available, certificate and filing record requests, business information summaries, compliance and renewal documentation, and document organization support.
+- Benefits, process, who it's for, FAQ, related services, consultation CTA, and the general legal/tax disclaimer.
+- Do not guarantee document availability, approval, or processing times because requirements vary by jurisdiction and issuing authority.
+
 ---
 
 # 21. PACKAGES PAGE
@@ -720,6 +731,7 @@ Bookkeeping
 Payroll
 IRS Notice Resolution
 Tax Refunds
+Legal Reports and Certificates
 Other
 ```
 
@@ -791,6 +803,7 @@ Columns:
 - Payroll
 - IRS Resolution
 - Tax Refunds
+- Legal Reports and Certificates
 
 ### Contact
 

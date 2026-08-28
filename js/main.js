@@ -72,6 +72,7 @@ const sharedFooterMarkup = `
           <li><a href="payroll.html">Payroll</a></li>
           <li><a href="irs-notice-resolution.html">IRS Resolution</a></li>
           <li><a href="tax-refunds.html">Tax Refunds</a></li>
+          <li><a href="legal-reports-certificates.html">Legal Reports and Certificates</a></li>
         </ul>
       </div>
       <div>

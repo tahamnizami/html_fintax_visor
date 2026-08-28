@@ -13,6 +13,7 @@ Core services:
 - Payroll Processing
 - IRS Notice Resolution
 - Tax Refunds
+- Legal Reports and Certificates
 
 Primary CTA: **Book a Consultation**
 Secondary CTAs: **Get Started**, **Explore Services**, **View Packages**, **Contact Us**
@@ -328,6 +329,9 @@ Get help understanding and responding to IRS or state tax notices.
 ### Tax Refunds
 Get assistance reviewing your tax situation and identifying eligible refund opportunities.
 
+### Legal Reports and Certificates
+Get support preparing and organizing business reports and certificates commonly needed for operations, filings, banking, and compliance.
+
 Each card has **Learn More**.
 
 ## What We Fix
@@ -495,6 +499,9 @@ Categories:
 
 ### Brand Protection
 - Trademark Registration
+
+### Business Documentation
+- Legal Reports and Certificates
 
 ---
 
@@ -701,9 +708,30 @@ Review may include:
 
 Never promise a specific refund amount.
 
+# 17. Legal Reports and Certificates — `/services/legal-reports-certificates`
+
+H1: **Legal Reports and Certificates for Your Business**
+
+Copy:
+> Get practical support preparing and organizing business reports and certificates commonly requested for operations, filings, banking, and compliance.
+
+Problem / context:
+> Businesses are often asked for current reports, certificates, or official records when opening accounts, completing filings, renewing registrations, or responding to compliance requests. Requirements vary by state and document type.
+
+Services may include:
+- Business status reports
+- Certificates of good standing where available
+- Certificate and filing record requests
+- Business information summaries
+- Compliance and renewal documentation
+- Document organization and delivery support
+
+Important note:
+> Requirements, availability, issuing authorities, and processing times vary by jurisdiction and document type. Do not guarantee approval or processing times.
+
 ---
 
-# 17. Packages — `/packages`
+# 18. Packages — `/packages`
 
 H1: **Simple Packages for Every Stage of Business**
 
@@ -908,6 +936,7 @@ Service dropdown:
 - Payroll
 - IRS Notice Resolution
 - Tax Refunds
+- Legal Reports and Certificates
 - Other
 
 CTA: **Submit Request**
@@ -959,6 +988,7 @@ Use the client's actual scheduling integration/link if available.
 - Payroll
 - IRS Resolution
 - Tax Refunds
+- Legal Reports and Certificates
 
 ## Contact
 - Email
@@ -1013,6 +1043,7 @@ Recommended routes:
 /services/payroll
 /services/irs-notice-resolution
 /services/tax-refunds
+/services/legal-reports-certificates
 /packages
 /blog
 /blog/[slug]
@@ -1169,6 +1200,7 @@ Footer
 7. Payroll
 8. IRS Notice Resolution
 9. Tax Refunds
+10. Legal Reports and Certificates
 
 ## Phase 3 — Content
 1. Blog
