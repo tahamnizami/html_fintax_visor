@@ -9,7 +9,21 @@ const sharedHeaderMarkup = `
         <ul class="nav__links">
           <li><a class="nav__link" href="index.html" data-nav="index">Home</a></li>
           <li><a class="nav__link" href="about.html" data-nav="about">About</a></li>
-          <li><a class="nav__link" href="services.html" data-nav="services">Services</a></li>
+          <li class="nav__item--has-dropdown">
+            <a class="nav__link" href="services.html" data-nav="services" aria-haspopup="true">Services</a>
+            <ul class="nav__dropdown" aria-label="Services submenu">
+              <li><a href="company-formation.html">Company Formation</a></li>
+              <li><a href="tax-legal-services.html">Tax &amp; Legal Services</a></li>
+              <li><a href="ein-itin.html">EIN &amp; ITIN</a></li>
+              <li><a href="business-bank-account.html">Business Bank Account</a></li>
+              <li><a href="trademark-registration.html">Trademark Registration</a></li>
+              <li><a href="bookkeeping.html">Bookkeeping</a></li>
+              <li><a href="payroll.html">Payroll</a></li>
+              <li><a href="irs-notice-resolution.html">IRS Notice Resolution</a></li>
+              <li><a href="tax-refunds.html">Tax Refunds</a></li>
+              <li><a href="legal-reports-certificates.html">Legal Reports and Certificates</a></li>
+            </ul>
+          </li>
           <li><a class="nav__link" href="packages.html" data-nav="packages">Packages</a></li>
           <li><a class="nav__link" href="blog.html" data-nav="blog">Blog</a></li>
           <li><a class="nav__link" href="faqs.html" data-nav="faqs">FAQs</a></li>
@@ -30,7 +44,21 @@ const sharedHeaderMarkup = `
         <ul class="mobile-nav__links">
           <li><a data-mobile-link href="index.html">Home</a></li>
           <li><a data-mobile-link href="about.html">About</a></li>
-          <li><a data-mobile-link href="services.html">Services</a></li>
+          <li class="mobile-nav__service-item">
+            <a data-mobile-link data-mobile-services-toggle href="services.html" aria-expanded="false" aria-controls="mobile-services-submenu">Services</a>
+            <ul class="mobile-nav__service-links" id="mobile-services-submenu" hidden>
+              <li><a data-mobile-link href="company-formation.html">Company Formation</a></li>
+              <li><a data-mobile-link href="tax-legal-services.html">Tax &amp; Legal Services</a></li>
+              <li><a data-mobile-link href="ein-itin.html">EIN &amp; ITIN</a></li>
+              <li><a data-mobile-link href="business-bank-account.html">Business Bank Account</a></li>
+              <li><a data-mobile-link href="trademark-registration.html">Trademark Registration</a></li>
+              <li><a data-mobile-link href="bookkeeping.html">Bookkeeping</a></li>
+              <li><a data-mobile-link href="payroll.html">Payroll</a></li>
+              <li><a data-mobile-link href="irs-notice-resolution.html">IRS Notice Resolution</a></li>
+              <li><a data-mobile-link href="tax-refunds.html">Tax Refunds</a></li>
+              <li><a data-mobile-link href="legal-reports-certificates.html">Legal Reports and Certificates</a></li>
+            </ul>
+          </li>
           <li><a data-mobile-link href="packages.html">Packages</a></li>
           <li><a data-mobile-link href="blog.html">Blog</a></li>
           <li><a data-mobile-link href="faqs.html">FAQs</a></li>
@@ -134,6 +162,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const body = document.body;
   const toggle = document.querySelector("[data-nav-toggle]");
   const mobileLinks = document.querySelectorAll("[data-mobile-link]");
+  const mobileServicesToggle = document.querySelector("[data-mobile-services-toggle]");
+  const mobileServicesSubmenu = document.getElementById("mobile-services-submenu");
   const accordions = document.querySelectorAll("[data-accordion-button]");
   const forms = document.querySelectorAll("[data-validate-form]");
   const revealItems = document.querySelectorAll(".reveal");
@@ -156,11 +186,27 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
   }
 
+  if (mobileServicesToggle && mobileServicesSubmenu) {
+    mobileServicesToggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      const isOpen = mobileServicesToggle.getAttribute("aria-expanded") === "true";
+      mobileServicesToggle.setAttribute("aria-expanded", String(!isOpen));
+      mobileServicesSubmenu.hidden = isOpen;
+    });
+  }
+
   mobileLinks.forEach((link) => {
+    if (link === mobileServicesToggle) {
+      return;
+    }
     link.addEventListener("click", () => {
       body.classList.remove("menu-open");
       if (toggle) {
         toggle.setAttribute("aria-expanded", "false");
+      }
+      if (mobileServicesToggle && mobileServicesSubmenu) {
+        mobileServicesToggle.setAttribute("aria-expanded", "false");
+        mobileServicesSubmenu.hidden = true;
       }
     });
   });
