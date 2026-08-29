@@ -1002,7 +1002,7 @@ Use the client's actual scheduling integration/link if available.
 - Disclaimer
 
 Copyright:
-`© 2026 [Company Name]. All rights reserved.`
+`© 2026 Fintax Visor. All rights reserved.`
 
 ---
 
@@ -1224,13 +1224,13 @@ Footer
 Before launch, collect:
 
 ```text
-[COMPANY NAME]
+Fintax Visor
 [LOGO]
 [TAGLINE]
 [EMAIL]
 [PHONE]
 [WHATSAPP]
-[BUSINESS ADDRESS]
+1209 MOUNTAIN ROAD PL NE STE R ALBUQUERQUE, NM 87110
 [BUSINESS HOURS]
 [TEAM INFORMATION]
 [YEARS OF EXPERIENCE]

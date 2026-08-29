@@ -1033,11 +1033,11 @@ Never invent:
 
 If information is missing, use an obvious placeholder such as:
 
-`[Company Name]`
+`Fintax Visor`
 
 or:
 
-`[Phone Number]`
+`+1 505 528 3808`
 
 Do not publish fake information.
 
