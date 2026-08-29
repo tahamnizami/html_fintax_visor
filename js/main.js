@@ -24,7 +24,8 @@ const sharedHeaderMarkup = `
               <li><a href="legal-reports-certificates.html">Legal Reports and Certificates</a></li>
             </ul>
           </li>
-          <li><a class="nav__link" href="packages.html" data-nav="packages">Packages</a></li>
+                <!-- Packages section commented until price is decided -->
+          <!-- <li><a class="nav__link" href="packages.html" data-nav="packages">Packages</a></li> -->
           <li><a class="nav__link" href="blog.html" data-nav="blog">Blog</a></li>
           <li><a class="nav__link" href="faqs.html" data-nav="faqs">FAQs</a></li>
           <li><a class="nav__link" href="contact.html" data-nav="contact">Contact</a></li>
@@ -59,7 +60,8 @@ const sharedHeaderMarkup = `
               <li><a data-mobile-link href="legal-reports-certificates.html">Legal Reports and Certificates</a></li>
             </ul>
           </li>
-          <li><a data-mobile-link href="packages.html">Packages</a></li>
+                <!-- Packages section commented until price is decided -->          
+          <!-- <li><a data-mobile-link href="packages.html">Packages</a></li> --> 
           <li><a data-mobile-link href="blog.html">Blog</a></li>
           <li><a data-mobile-link href="faqs.html">FAQs</a></li>
           <li><a data-mobile-link href="contact.html">Contact</a></li>
@@ -82,7 +84,8 @@ const sharedFooterMarkup = `
         <ul class="footer__links">
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="packages.html">Packages</a></li>
+                <!-- Packages section commented until price is decided -->          
+        <!--  <li><a href="packages.html">Packages</a></li> -->
           <li><a href="blog.html">Blog</a></li>
           <li><a href="faqs.html">FAQs</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -109,7 +112,8 @@ const sharedFooterMarkup = `
           <span>fintaxvisor@gmail.com</span>
           <span>+1 505 528 3808</span>
           <span>1209 MOUNTAIN ROAD PL NE STE R ALBUQUERQUE, NM 87110</span>
-          <span>[Business Hours]</span>
+            <!-- business hours hide until decided -->
+          <!--<span>[Business Hours]</span> -->
         </div>
         <h3 class="footer__title" style="margin-top:22px;">Legal</h3>
         <ul class="footer__links">
