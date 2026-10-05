@@ -130,38 +130,20 @@ const sharedFooterMarkup = `
   </footer>
 `;
 
-const loadSharedTemplate = async () => {
+const loadSharedTemplate = () => {
   const headerTarget = document.querySelector("[data-header]");
   if (headerTarget) {
-    try {
-      const response = await fetch("header.html");
-      if (response.ok) {
-        headerTarget.outerHTML = await response.text();
-      } else {
-        headerTarget.outerHTML = sharedHeaderMarkup;
-      }
-    } catch (error) {
-      headerTarget.outerHTML = sharedHeaderMarkup;
-    }
+    headerTarget.outerHTML = sharedHeaderMarkup;
   }
 
   const footerTarget = document.querySelector("[data-footer]");
   if (footerTarget) {
-    try {
-      const response = await fetch("footer.html");
-      if (response.ok) {
-        footerTarget.outerHTML = await response.text();
-      } else {
-        footerTarget.outerHTML = sharedFooterMarkup;
-      }
-    } catch (error) {
-      footerTarget.outerHTML = sharedFooterMarkup;
-    }
+    footerTarget.outerHTML = sharedFooterMarkup;
   }
 };
 
-document.addEventListener("DOMContentLoaded", async () => {
-  await loadSharedTemplate();
+document.addEventListener("DOMContentLoaded", () => {
+  loadSharedTemplate();
 
   const body = document.body;
   const toggle = document.querySelector("[data-nav-toggle]");
